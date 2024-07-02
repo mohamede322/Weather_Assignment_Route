@@ -40,7 +40,7 @@ async function getWeather() {
   let res = await fetch(url, {
     method: "GET",
     headers: {
-      "content-type": "application/json",
+      "Content-Type": "application/json",
     },
   });
   let data = await res.json();
