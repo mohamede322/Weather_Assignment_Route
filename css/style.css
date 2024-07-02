@@ -1,0 +1,54 @@
+:root {
+  --dark-color-main: #1e202b;
+  --dark-color-lighter: #373947;
+}
+
+.navbar {
+  background-color: var(--dark-color-main);
+}
+.tagline {
+  font-size: 10px;
+}
+.hero {
+  background-image: url(../imgs/banner.png);
+  background-color: var(--dark-color-main);
+  background-repeat: no-repeat;
+}
+
+.find-btn {
+  right: 5px;
+}
+
+#searchInput,
+#subscribeInput {
+  background-color: var(--dark-color-main);
+}
+.box {
+  background-color: var(--dark-color-lighter);
+}
+.box.middle {
+  background-color: #262936;
+}
+.box-header {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.degree {
+  font-size: 86px;
+}
+.weather-img {
+  width: 100px;
+}
+.weather-img-sm {
+  width: 48px;
+}
+footer {
+  background-color: var(--dark-color-lighter);
+}
+.btn {
+  width: 35px;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+}

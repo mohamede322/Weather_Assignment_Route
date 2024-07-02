@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS Links -->
+    <title>Weather Assignment</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div
+            class="navbar-brand-container py-2 d-flex justify-content-center align-items-center"
+          >
+            <img src="imgs/logo@2x.png" class="w-25 me-2" alt="" />
+            <div
+              class="d-flex flex-column justify-content-center align-items-start"
+            >
+              <a class="navbar-brand text-light pb-0" href="#">Weather</a>
+              <a href="#" class="text-white-50 tagline">tagline goes here</a>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="#">News</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-light" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="hero w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container content pb-5">
+          <div class="py-5 d-flex justify-content-center align-items-center">
+            <div
+              class="search-container w-100 d-flex position-relative form-floating"
+            >
+              <input
+                id="searchInput"
+                type="search"
+                class="form-control form-label form-floating mb-0 rounded-5 border-0 text-light ps-3"
+                placeholder="Find your location..."
+              />
+              <label for="searchInput" class="text-white-50 ps-3"
+                >Find your location...</label
+              >
+              <button
+                class="d-flex justify-content-center align-items-center btn btn-primary find-btn position-absolute rounded-5 px-5 py-2 top-50 translate-middle-y"
+              >
+                Find
+              </button>
+            </div>
+          </div>
+          <div class="row rounded-3 overflow-hidden gy-3">
+            <div class="col-lg-4 p-lg-0">
+              <div class="box text-light">
+                <header
+                  class="box-header d-flex justify-content-between align-items-center p-2"
+                >
+                  <p class="mb-0 day">Friday</p>
+                  <p class="mb-0 day-date">28June</p>
+                </header>
+                <section
+                  class="text-center py-4 px-3 d-flex flex-column align-items-start justify-content-center"
+                >
+                  <h2 class="display-6 fs-5 city">
+                    Andros Town International Airport
+                  </h2>
+                  <h3 class="fw-bold degree text-white">25.3oC</h3>
+                  <img src="imgs/116.webp" alt="" class="weather-img" />
+                  <p class="weather-status text-primary">Partly cloudy</p>
+                  <div
+                    class="d-flex justify-content-start w-100 gap-3 align-items-center"
+                  >
+                    <span
+                      class="wind d-flex justify-content-between align-items-center gap-2"
+                      ><img src="imgs/icon-wind.png" alt="" />
+                      <p class="mb-0 text-white-50">20%</p>
+                    </span>
+                    <span
+                      class="umberella d-flex justify-content-between align-items-center gap-2"
+                      ><img src="imgs/icon-umberella.png" alt="" />
+                      <p class="mb-0 text-white-50">18km/h</p>
+                    </span>
+                    <span
+                      class="compass d-flex justify-content-between align-items-center gap-2"
+                      ><img src="imgs/icon-compass.png" alt="" />
+                      <p class="mb-0 text-white-50">East</p>
+                    </span>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0">
+              <div class="box middle text-light h-100">
+                <header class="box-header text-center p-2">
+                  <p class="mb-0 next-day">Saturday</p>
+                </header>
+                <section
+                  class="text-center h-100 py-4 px-3 d-flex flex-column align-items-center justify-content-start pt-5"
+                >
+                  <img
+                    src="imgs/176.webp"
+                    alt=""
+                    class="next-day-img weather-img-sm"
+                  />
+                  <div>
+                    <h4 class="mb-0 nextday-degree">30.1oC</h4>
+                    <p class="text-white-50 nextday-feelslike">28o</p>
+                  </div>
+                  <p
+                    class="weather-status next-day-weather-status text-primary"
+                  >
+                    Patchy rain nearby
+                  </p>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-4 p-lg-0">
+              <div class="box text-light h-100">
+                <header class="box-header text-center p-2">
+                  <p class="mb-0 third-day">Sunday</p>
+                </header>
+                <section
+                  class="text-center h-100 py-4 px-3 d-flex flex-column align-items-center justify-content-start pt-5"
+                >
+                  <img
+                    src="imgs/302.webp"
+                    alt=""
+                    class="third-day-img weather-img-sm"
+                  />
+                  <div>
+                    <h4 class="mb-0 third-day-degree">29.4oC</h4>
+                    <p class="text-white-50 third-day-feelslike">27.6o</p>
+                  </div>
+                  <p
+                    class="weather-status text-primary third-day-weather-status"
+                  >
+                    Moderate rain
+                  </p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container py-5">
+        <div
+          class="contact d-flex justify-content-between align-items-center gap-5 flex-lg-row flex-column"
+        >
+          <div class="d-flex w-100 justify-content-center align-items-center">
+            <div
+              class="search-container w-100 d-flex position-relative form-floating"
+            >
+              <input
+                id="subscribeInput"
+                type="search"
+                class="form-control form-label form-floating mb-0 rounded-5 border-0 text-light ps-3"
+                placeholder="Find your location..."
+              />
+              <label for="subscribeInput" class="text-white-50 ps-3"
+                >Enter your email to subscribe</label
+              >
+              <button
+                class="d-flex justify-content-center align-items-center btn btn-primary find-btn position-absolute rounded-5 px-5 py-2 top-50 translate-middle-y"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="links">
+            <ul
+              class="list-unstyled mb-0 d-flex justify-content-center align-items-center gap-3"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                  ><i class="fa fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                  ><i class="fa fa-brands fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p
+          class="copyright mb-0 mt-4 fw-semibold text-white-50 text-lg-start text-center"
+        >
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="js/main.js"></script>
+    <!-- JS File -->
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Script -->
+  </body>
+</html>
