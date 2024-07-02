@@ -37,7 +37,12 @@ async function getWeather() {
   let url = `${baseUrl}/forecast.json?key=${apiKey}&q=${
     inputValue == null ? "Alexandria" : inputValue
   }&days=3`;
-  let res = await fetch(url);
+  let res = await fetch(url, {
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+    },
+  });
   let data = await res.json();
 
   displayData(data.forecast.forecastday, data.location);
