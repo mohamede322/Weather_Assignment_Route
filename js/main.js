@@ -1,4 +1,4 @@
-const baseUrl = `http://api.weatherapi.com/v1`;
+const baseUrl = `https://api.weatherapi.com/v1`;
 const apiKey = `76934a3c99bc4af88b2183839240207`;
 
 const searchInput = document.querySelector("#searchInput");
